@@ -189,6 +189,26 @@ int main()
     
 }
 
+FINDING EVEN AND ODD ELEMENTS IN AN ARRAY:
+#include<stdio.h>
+int main()
+{
+    int arr[5]={10,20,30,43,50};
+    int even=0,odd=0;
+    for(int i=0;i<5;i++)
+    {
+        if(arr[i]%2==0)
+        {
+            even++;
+        }
+        else
+        {
+            odd++;
+        }
+    }
+    printf("%d ",even);
+    printf("%d ",odd);
+}
 
 
 
