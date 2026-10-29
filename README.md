@@ -209,6 +209,56 @@ int main()
     printf("%d ",even);
     printf("%d ",odd);
 }
+PROBLEM: 
+STAGE 10: COUNTING POSITIVE, NEGATIVE, AND ZERO ELEMENTS:
+#include<stdio.h>
+int main()
+{
+    int arr[7]={-5,10,0,-2,8,0,3};
+    int positive=0,negative=0,zeroes=0;
+    for(int i=0;i<7;i++)
+    {
+        if(arr[i]>0)
+        {
+            positive++;
+        }
+        else if(arr[i]<0)
+        {
+            negative++;
+        }
+        else
+        {
+            zeroes++;
+        }
+    }
+    printf("positive:%d negative:%d zeroes:%d",positive,negative,zeroes);
+    return 0;
+    
+}
+
+STAGE 11: REVERSING AN ARRAY:
+ARRAY IS arr[5]={10,20,30,40,50};
+
+#include<stdio.h>
+int main()
+{
+    int a[5]={10,20,30,40,50};
+    int i,j,temp;
+    for(i=0,j=4;i<j;i++,j--)
+    {
+        temp=a[i];
+        a[i]=a[j];
+        a[j]=temp;
+    }
+    for(i=0;i<5;i++)
+    {
+        printf("%d ",a[i]);
+    }
+    return 0;
+}
+
+SORTING TECHNIQUES:
+PLS DO REVISION:
 
 
 
